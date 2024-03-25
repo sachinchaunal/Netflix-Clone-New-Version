@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+}
+.main{
+    background-image: url("asset/IN-en-20240311-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: max(1200px,100vw);
+    height: 95vh;
+    position: relative;
+}
+.main .box{
+    height: 95vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.78;
+    position: absolute;
+    top: 0;
+}
+
+.flex1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+}
+span img{
+    width: 150px;
+    position: relative;
+    z-index: 1;
+}
+.lang-sel {
+    color: white;
+    background-color: black;
+    opacity: 0.33;
+    padding: 8px 26px;
+    position: relative;
+    z-index: 11;
+    border: 2px solid white;
+    border-radius: 7px;
+    font-weight: 500;
+    font-size: 17px;
+    margin-right: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 10px 24px;
+    position: relative;
+    z-index: 1;
+    border-radius: 7px;
+    font-weight: 300;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+.info{
+    color: white;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 25px;
+}
+.info :first-child{
+    font-size: 56px;
+    font-weight: 900;
+    width: 40vw;
+    text-align: center;
+    line-height: 1.3;
+}
+.info :nth-child(2){
+    font-size: 20px;
+    font-weight: 500;
+}
+.info :nth-child(3){
+    font-size: 16px;
+    font-weight: 400;
+    width: 90vw;
+    text-align: center;
+}
+
+
+
+.eadd {
+    max-width: 58vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 1%;
+    position: relative;
+    z-index: 2;
+}
+.eadd .btn-red{
+    padding: 15px 45px;
+}
+.eadd .lang-sel{
+    padding: 15px 101px 15px 14px;
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.seperation{
+    height: 70px;
+    border: solid .25rem #ce4141a3;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom: none;
+    position: relative;
+    top: -25px;
+    background-color: black;
+    /* box-shadow: inset 14px 16px 20px 13px rgba(22, 43, 163, 0.5); */
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 24px;
+    color: white;
+    margin-left: 10vw;
+    margin-bottom: 2vh;
+}
+.plans{
+    max-width: 80vw;
+    margin: auto;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    gap: 15px;
+}
+.card{
+    border-radius: 20px;
+    width: 18vw;
+    background: linear-gradient(180deg, #922556 0%, #210d0e 99.51%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 0px 20px 20px;
+    cursor: pointer;
+}
+.card :nth-child(1){
+    font-weight: 500;
+    font-size: 24px;
+}
+.card :nth-child(2){
+    font-weight: 400;
+    font-size: 18px;
+    opacity: 0.7;
+}
+.card :nth-child(3){
+    font-weight: 500;
+    font-size: 18px;
+    opacity: 0.8;
+}
+.card:hover{
+    background: linear-gradient(180deg, #ca4380 0%, #210d0e 99.51%);
+    transform: scale(1.01);
+}
+
+section > .heading{
+    margin-top: 8vh;
+}
+.choices{
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    gap: 20px;
+}
+
+.moviecontainer{
+    display: flex;
+    justify-content: start;
+    margin-left: 10vw;
+    margin-top: 5vh;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.moviecontainer img{
+    border-radius: 15px;
+}
+.movie{
+    width: 200px;
+    height: 270px;
+    position: relative;
+}
+.bignumber{
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: -25px;
+    font-size: 7.5rem;
+    font-weight: 700;
+    color: rgb(65, 65, 65);
+    -webkit-text-stroke: 0.1rem rgba(255, 255, 255, 0.877);
+    text-shadow: 0 0 1.5rem rgba(0,0,0,0.5);
+    -webkit-text-fill-color: rgb(0, 0, 0);
+}
+.movie:hover{
+    scale: 1.03;
+}   
+.gamescontainer{
+    border: 2px solid black;
+    border-radius: 25px;
+    background: linear-gradient(149deg, #45172B 0.54%, #120C1F 75.04%);
+    max-width: 80vw;
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.games2{
+    width: 100%;
+    height: 100%;
+    min-height: 12.5rem;
+    position: relative;
+}
+.games2 > img{
+    width: 60.25rem;
+    height: 153%;
+    position: absolute;
+    right: -22.5rem;
+    top: -70px;
+}
+.games{
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+.games1>div:nth-child(1){
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    margin-left: 5vh;
+}
+.games1 div:nth-child(2){
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 5vh;
+    opacity: 0.6;
+    margin-top: 3vh;
+    
+}
+.grd-container{
+    border: 2px solid black;
+    border-radius: 25px;
+    max-width: 80vw;
+    margin: auto;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.grd{
+    border: 2px solid black;
+    border-radius: 25px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    height: 18vh;
+    width: 17vw;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 2rem 1.5rem 8rem 1.5rem;
+}
+
+.grd img{
+    width: 70px;
+    position: relative;
+    bottom: -90px;
+    right: -179px;
+}
+.questions{
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ques-grd{
+    color: white;
+    width: 80%;
+    height: 8vh;
+    background-color: rgb(45, 45, 45);
+    padding: 35px 0px 0px 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+footer{
+    margin-top: 12vh;
+}
+.membership{
+    max-width: 80vw;
+    margin: auto;
+}
+.lang-sel2{
+    width: 51vw;
+    height: 6vh;
+    margin-bottom: 5vh;
+}
+.btn-red2{
+    width: 12vw;
+    height: 8vh;
+}
+.last-info{
+    color: white;
+    max-width: 75vw;
+    margin: auto;
+    opacity: 0.8;
+    font-size: 12px;
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+    opacity: 0.8;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+}
+.last{
+    margin-top: 5vh;
+    opacity: 0.8;
+    margin-bottom: 15vh;
+}
