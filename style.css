@@ -7,7 +7,7 @@ body{
     background-color: black;
 }
 .main{
-    background-image: url("asset/IN-en-20240311-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-image: url("IN-en-20240311-popsignuptwoweeks-perspective_alpha_website_large.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: max(1200px,100vw);
